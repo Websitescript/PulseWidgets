@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView android:id="@+id/bg_base" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/bg_teal_a" />
+<ViewFlipper android:id="@+id/bg_flip" android:layout_width="match_parent" android:layout_height="match_parent" android:autoStart="true" android:flipInterval="6500" android:inAnimation="@anim/fade_in_slow" android:outAnimation="@anim/fade_out_slow">
+    <ImageView android:id="@+id/bg_alt" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/bg_teal_b" />
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" />
+</ViewFlipper>
+<ImageView android:id="@+id/bg_glass" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/glass_overlay" android:visibility="gone" />
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:padding="12dp">
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp">
+<TextView android:id="@+id/nav_prev" android:layout_width="46dp" android:layout_height="match_parent" android:gravity="center" android:text="‹" android:textSize="28sp" android:textColor="#2DD4BF" android:includeFontPadding="false" />
+<TextView android:id="@+id/month_title" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:text="Month" android:textSize="20sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+<TextView android:id="@+id/nav_next" android:layout_width="46dp" android:layout_height="match_parent" android:gravity="center" android:text="›" android:textSize="28sp" android:textColor="#2DD4BF" android:includeFontPadding="false" />
+</LinearLayout>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="4dp" android:layout_marginBottom="2dp">
+<TextView android:id="@+id/mh_0" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="MON" android:textSize="11sp" android:textColor="#86BDB6" android:fontFamily="monospace" android:includeFontPadding="false" android:singleLine="true" android:textAllCaps="true" />
+<TextView android:id="@+id/mh_1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="MON" android:textSize="11sp" android:textColor="#86BDB6" android:fontFamily="monospace" android:includeFontPadding="false" android:singleLine="true" android:textAllCaps="true" />
+<TextView android:id="@+id/mh_2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="MON" android:textSize="11sp" android:textColor="#86BDB6" android:fontFamily="monospace" android:includeFontPadding="false" android:singleLine="true" android:textAllCaps="true" />
+<TextView android:id="@+id/mh_3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="MON" android:textSize="11sp" android:textColor="#86BDB6" android:fontFamily="monospace" android:includeFontPadding="false" android:singleLine="true" android:textAllCaps="true" />
+<TextView android:id="@+id/mh_4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="MON" android:textSize="11sp" android:textColor="#86BDB6" android:fontFamily="monospace" android:includeFontPadding="false" android:singleLine="true" android:textAllCaps="true" />
+<TextView android:id="@+id/mh_5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="MON" android:textSize="11sp" android:textColor="#86BDB6" android:fontFamily="monospace" android:includeFontPadding="false" android:singleLine="true" android:textAllCaps="true" />
+<TextView android:id="@+id/mh_6" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="MON" android:textSize="11sp" android:textColor="#86BDB6" android:fontFamily="monospace" android:includeFontPadding="false" android:singleLine="true" android:textAllCaps="true" />
+</LinearLayout>
+<LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+<FrameLayout android:id="@+id/c_0" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_0" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_1" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_1" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_2" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_3" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_3" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_4" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_4" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_5" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_5" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_6" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_6" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+</LinearLayout>
+<LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+<FrameLayout android:id="@+id/c_7" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_7" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_8" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_8" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_9" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_9" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_10" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_10" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_11" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_11" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_12" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_12" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_13" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_13" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+</LinearLayout>
+<LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+<FrameLayout android:id="@+id/c_14" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_14" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_15" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_15" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_16" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_16" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_17" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_17" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_18" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_18" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_19" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_19" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_19" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_20" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_20" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+</LinearLayout>
+<LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+<FrameLayout android:id="@+id/c_21" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_21" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_21" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_22" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_22" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_23" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_23" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_23" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_24" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_24" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_25" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_25" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_25" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_26" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_26" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_26" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_27" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_27" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+</LinearLayout>
+<LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+<FrameLayout android:id="@+id/c_28" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_28" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_28" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_29" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_29" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_29" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_30" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_30" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_31" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_31" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_32" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_32" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_32" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_33" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_33" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_34" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_34" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_34" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+</LinearLayout>
+<LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+<FrameLayout android:id="@+id/c_35" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_35" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_35" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_36" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_36" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_36" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_37" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_37" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_37" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_38" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_38" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_38" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_39" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_39" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_39" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_40" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_40" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+<FrameLayout android:id="@+id/c_41" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+<ImageView android:id="@+id/hl_41" android:layout_width="36dp" android:layout_height="36dp" android:layout_gravity="center" android:src="@drawable/circle_teal" android:visibility="gone" />
+<TextView android:id="@+id/d_41" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="1" android:textSize="16sp" android:textColor="#E6FFFB" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" />
+</FrameLayout>
+</LinearLayout>
+</LinearLayout>
+</FrameLayout>

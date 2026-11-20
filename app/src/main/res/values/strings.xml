@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pulse Widgets</string>
+    <string name="desc_clock_analog_1x1">Analog clock with a spinning ring and a sliding date label.</string>
+    <string name="desc_clock_stack_1x2">Hours over minutes with a sliding date label.</string>
+    <string name="desc_clock_digital_2x1">Digital clock with live seconds and an animated date.</string>
+    <string name="desc_clock_analog_2x2">Analog clock with a spinning ring and a sliding date label.</string>
+    <string name="desc_clock_digital_3x1">Digital clock with live seconds and an animated date.</string>
+    <string name="desc_clock_digital_3x2">Digital clock with live seconds and an animated date.</string>
+    <string name="desc_clock_analog_3x3">Analog clock with a spinning ring and a sliding date label.</string>
+    <string name="desc_clock_digital_4x1">Digital clock with live seconds and an animated date.</string>
+    <string name="desc_clock_digital_4x2">Digital clock with live seconds and an animated date.</string>
+    <string name="desc_clock_hero_4x4">Large analog clock with digital time and date.</string>
+    <string name="desc_clock_digital_5x1">Digital clock with live seconds and an animated date.</string>
+    <string name="desc_clock_digital_5x2">Digital clock with live seconds and an animated date.</string>
+    <string name="desc_clock_hero_5x5">Large analog clock with digital time and date.</string>
+    <string name="desc_cal_tile_1x1">Date tile that flips between day number and weekday.</string>
+    <string name="desc_cal_strip_2x1">Date strip with weekday, month and week number.</string>
+    <string name="desc_cal_card_2x2">Big date card with a year-progress bar.</string>
+    <string name="desc_cal_strip_3x1">Date strip with weekday, month and week number.</string>
+    <string name="desc_cal_cardwide_3x2">Wide date card with a year-progress bar.</string>
+    <string name="desc_cal_card_3x3">Big date card with a year-progress bar.</string>
+    <string name="desc_cal_month_3x3">Full month grid. Tap the arrows to browse, tap the title to return.</string>
+    <string name="desc_cal_weekbar_4x1">Compact week row with a breathing highlight on today.</string>
+    <string name="desc_cal_week_4x2">Week strip with a breathing highlight on today.</string>
+    <string name="desc_cal_month_4x4">Full month grid. Tap the arrows to browse, tap the title to return.</string>
+    <string name="desc_cal_weekbar_5x1">Compact week row with a breathing highlight on today.</string>
+    <string name="desc_cal_week_5x2">Week strip with a breathing highlight on today.</string>
+    <string name="desc_cal_month_5x5">Full month grid. Tap the arrows to browse, tap the title to return.</string>
+</resources>

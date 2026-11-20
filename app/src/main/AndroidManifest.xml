@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Pulse">
+
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".RefreshReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".widgets.ClockAnalog1x1" android:exported="true" android:label="Clock · Analog 1×1">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_clock_analog_1x1" />
+        </receiver>
+        <receiver android:name=".widgets.ClockStack1x2" android:exported="true" android:label="Clock · Stacked 1×2">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_clock_stack_1x2" />
+        </receiver>
+        <receiver android:name=".widgets.ClockDigital2x1" android:exported="true" android:label="Clock · Digital 2×1">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_clock_digital_2x1" />
+        </receiver>
+        <receiver android:name=".widgets.ClockAnalog2x2" android:exported="true" android:label="Clock · Analog 2×2">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_clock_analog_2x2" />
+        </receiver>
+        <receiver android:name=".widgets.ClockDigital3x1" android:exported="true" android:label="Clock · Digital 3×1">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_clock_digital_3x1" />
+        </receiver>
+        <receiver android:name=".widgets.ClockDigital3x2" android:exported="true" android:label="Clock · Digital+Dial 3×2">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_clock_digital_3x2" />
+        </receiver>
+        <receiver android:name=".widgets.ClockAnalog3x3" android:exported="true" android:label="Clock · Analog 3×3">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_clock_analog_3x3" />
+        </receiver>
+        <receiver android:name=".widgets.ClockDigital4x1" android:exported="true" android:label="Clock · Digital 4×1">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_clock_digital_4x1" />
+        </receiver>
+        <receiver android:name=".widgets.ClockDigital4x2" android:exported="true" android:label="Clock · Digital+Dial 4×2">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_clock_digital_4x2" />
+        </receiver>
+        <receiver android:name=".widgets.ClockHero4x4" android:exported="true" android:label="Clock · Hero 4×4">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_clock_hero_4x4" />
+        </receiver>
+        <receiver android:name=".widgets.ClockDigital5x1" android:exported="true" android:label="Clock · Digital 5×1">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_clock_digital_5x1" />
+        </receiver>
+        <receiver android:name=".widgets.ClockDigital5x2" android:exported="true" android:label="Clock · Digital+Dial 5×2">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_clock_digital_5x2" />
+        </receiver>
+        <receiver android:name=".widgets.ClockHero5x5" android:exported="true" android:label="Clock · Hero 5×5">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_clock_hero_5x5" />
+        </receiver>
+        <receiver android:name=".widgets.CalTile1x1" android:exported="true" android:label="Calendar · Tile 1×1">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_cal_tile_1x1" />
+        </receiver>
+        <receiver android:name=".widgets.CalStrip2x1" android:exported="true" android:label="Calendar · Strip 2×1">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_cal_strip_2x1" />
+        </receiver>
+        <receiver android:name=".widgets.CalCard2x2" android:exported="true" android:label="Calendar · Card 2×2">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_cal_card_2x2" />
+        </receiver>
+        <receiver android:name=".widgets.CalStrip3x1" android:exported="true" android:label="Calendar · Strip 3×1">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_cal_strip_3x1" />
+        </receiver>
+        <receiver android:name=".widgets.CalCardwide3x2" android:exported="true" android:label="Calendar · Wide Card 3×2">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_cal_cardwide_3x2" />
+        </receiver>
+        <receiver android:name=".widgets.CalCard3x3" android:exported="true" android:label="Calendar · Card 3×3">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_cal_card_3x3" />
+        </receiver>
+        <receiver android:name=".widgets.CalMonth3x3" android:exported="true" android:label="Calendar · Month 3×3">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_cal_month_3x3" />
+        </receiver>
+        <receiver android:name=".widgets.CalWeekbar4x1" android:exported="true" android:label="Calendar · Week Bar 4×1">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_cal_weekbar_4x1" />
+        </receiver>
+        <receiver android:name=".widgets.CalWeek4x2" android:exported="true" android:label="Calendar · Week 4×2">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_cal_week_4x2" />
+        </receiver>
+        <receiver android:name=".widgets.CalMonth4x4" android:exported="true" android:label="Calendar · Month 4×4">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_cal_month_4x4" />
+        </receiver>
+        <receiver android:name=".widgets.CalWeekbar5x1" android:exported="true" android:label="Calendar · Week Bar 5×1">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_cal_weekbar_5x1" />
+        </receiver>
+        <receiver android:name=".widgets.CalWeek5x2" android:exported="true" android:label="Calendar · Week 5×2">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_cal_week_5x2" />
+        </receiver>
+        <receiver android:name=".widgets.CalMonth5x5" android:exported="true" android:label="Calendar · Month 5×5">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/info_cal_month_5x5" />
+        </receiver>
+
+    </application>
+</manifest>

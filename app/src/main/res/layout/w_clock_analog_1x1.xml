@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView android:id="@+id/bg_base" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/bg_teal_a" />
+<ViewFlipper android:id="@+id/bg_flip" android:layout_width="match_parent" android:layout_height="match_parent" android:autoStart="true" android:flipInterval="6500" android:inAnimation="@anim/fade_in_slow" android:outAnimation="@anim/fade_out_slow">
+    <ImageView android:id="@+id/bg_alt" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/bg_teal_b" />
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" />
+</ViewFlipper>
+<ImageView android:id="@+id/bg_glass" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/glass_overlay" android:visibility="gone" />
+<ProgressBar android:id="@+id/ring_teal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4dp" android:minWidth="8dp" android:minHeight="8dp" android:indeterminate="true" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/ring_teal" android:visibility="visible" />
+<ProgressBar android:id="@+id/ring_coral" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4dp" android:minWidth="8dp" android:minHeight="8dp" android:indeterminate="true" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/ring_coral" android:visibility="gone" />
+<ProgressBar android:id="@+id/ring_gold" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4dp" android:minWidth="8dp" android:minHeight="8dp" android:indeterminate="true" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/ring_gold" android:visibility="gone" />
+<ProgressBar android:id="@+id/ring_aurora" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4dp" android:minWidth="8dp" android:minHeight="8dp" android:indeterminate="true" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/ring_aurora" android:visibility="gone" />
+<AnalogClock android:id="@+id/analog" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="14dp" android:dial="@drawable/clock_dial_dots_s" android:hand_hour="@drawable/clock_hour_s" android:hand_minute="@drawable/clock_minute_s" android:hand_second="@drawable/clock_second_s" />
+</FrameLayout>
