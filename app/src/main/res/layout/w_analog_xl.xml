@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView android:id="@+id/bg_base" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/bg_sys_auto_ga" />
+<ViewFlipper android:id="@+id/bg_flip" android:layout_width="match_parent" android:layout_height="match_parent" android:autoStart="true" android:flipInterval="6500" android:inAnimation="@anim/fade_in_slow" android:outAnimation="@anim/fade_out_slow">
+    <ImageView android:id="@+id/bg_alt" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/bg_sys_auto_gb" />
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" />
+</ViewFlipper>
+<ImageView android:id="@+id/bg_glass" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/glass_overlay" android:visibility="gone" />
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp">
+<FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+<AnalogClock android:id="@+id/analog" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4dp" android:dial="@drawable/clock_dial_l" android:hand_hour="@drawable/clock_hour_l" android:hand_minute="@drawable/clock_minute_l" android:hand_second="@drawable/clock_second_l" />
+</FrameLayout>
+<LinearLayout android:layout_height="wrap_content" android:orientation="horizontal" android:layout_width="match_parent" android:gravity="center_vertical" android:layout_marginTop="8dp" android:paddingLeft="6dp" android:paddingRight="6dp">
+<LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="0dp" android:layout_weight="1">
+<TextClock android:id="@+id/ta_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format12Hour="EEEE" android:format24Hour="EEEE" android:textSize="18sp" android:textColor="@color/w_accent" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" />
+<TextClock android:id="@+id/tp_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format12Hour="d MMMM yyyy" android:format24Hour="d MMMM yyyy" android:textSize="13sp" android:textColor="@color/w_text1" android:fontFamily="sans-serif" android:includeFontPadding="false" android:singleLine="true" />
+</LinearLayout>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+<TextView android:id="@+id/wx_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="☀️" android:textSize="30sp" android:textColor="@color/w_text1" android:fontFamily="sans-serif" android:includeFontPadding="false" android:singleLine="true" />
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginLeft="8dp">
+<TextView android:id="@+id/wx_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--°" android:textSize="24sp" android:textColor="@color/w_text1" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" />
+<TextView android:id="@+id/wx_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Weather" android:textSize="10sp" android:textColor="@color/w_text2" android:fontFamily="monospace" android:includeFontPadding="false" android:singleLine="true" android:textAllCaps="true" />
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>
+</FrameLayout>

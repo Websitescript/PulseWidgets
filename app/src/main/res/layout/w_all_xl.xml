@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView android:id="@+id/bg_base" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/bg_sys_auto_ga" />
+<ViewFlipper android:id="@+id/bg_flip" android:layout_width="match_parent" android:layout_height="match_parent" android:autoStart="true" android:flipInterval="6500" android:inAnimation="@anim/fade_in_slow" android:outAnimation="@anim/fade_out_slow">
+    <ImageView android:id="@+id/bg_alt" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/bg_sys_auto_gb" />
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" />
+</ViewFlipper>
+<ImageView android:id="@+id/bg_glass" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/glass_overlay" android:visibility="gone" />
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp">
+<LinearLayout android:layout_height="wrap_content" android:orientation="horizontal" android:layout_width="match_parent" android:gravity="center_vertical">
+<AnalogClock android:id="@+id/analog" android:layout_width="wrap_content" android:layout_height="120dp" android:layout_margin="2dp" android:dial="@drawable/clock_dial_s" android:hand_hour="@drawable/clock_hour_s" android:hand_minute="@drawable/clock_minute_s" android:hand_second="@drawable/clock_second_s" />
+<LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="0dp" android:layout_weight="1" android:layout_marginLeft="14dp" android:gravity="center_vertical">
+<TextClock android:id="@+id/tp_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format12Hour="h:mm" android:format24Hour="HH:mm" android:textSize="40sp" android:textColor="@color/w_text1" android:fontFamily="sans-serif-light" android:includeFontPadding="false" android:singleLine="true" />
+<TextClock android:id="@+id/ta_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format12Hour="EEEE" android:format24Hour="EEEE" android:textSize="13sp" android:textColor="@color/w_accent" android:fontFamily="monospace" android:includeFontPadding="false" android:singleLine="true" android:textAllCaps="true" android:letterSpacing="0.18" />
+<TextClock android:id="@+id/ts_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format12Hour="d MMMM yyyy" android:format24Hour="d MMMM yyyy" android:textSize="12sp" android:textColor="@color/w_text2" android:fontFamily="monospace" android:includeFontPadding="false" android:singleLine="true" android:textAllCaps="true" android:letterSpacing="0.06" />
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginTop="8dp">
+<TextView android:id="@+id/wx_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="☀️" android:textSize="22sp" android:textColor="@color/w_text1" android:fontFamily="sans-serif" android:includeFontPadding="false" android:singleLine="true" />
+<TextView android:id="@+id/wx_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--°" android:textSize="20sp" android:textColor="@color/w_text1" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" android:layout_marginLeft="6dp" />
+<TextView android:id="@+id/wx_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Weather" android:textSize="10sp" android:textColor="@color/w_text2" android:fontFamily="monospace" android:includeFontPadding="false" android:singleLine="true" android:textAllCaps="true" android:layout_marginLeft="8dp" />
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>
+<LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal" android:gravity="center_vertical">
+<LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center_horizontal">
+<TextView android:id="@+id/wk_name_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MON" android:textSize="10sp" android:textColor="@color/w_text2" android:fontFamily="monospace" android:includeFontPadding="false" android:singleLine="true" android:textAllCaps="true" android:letterSpacing="0.05" />
+<FrameLayout android:layout_width="34dp" android:layout_height="34dp" android:layout_marginTop="5dp">
+<ViewFlipper android:id="@+id/wk_hl_0" android:layout_width="match_parent" android:layout_height="match_parent" android:autoStart="true" android:flipInterval="1800" android:inAnimation="@anim/pulse_in" android:outAnimation="@anim/pulse_out" android:visibility="gone">
+<ImageView android:id="@+id/wk_hl_0_a" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/circle_white" />
+<ImageView android:id="@+id/wk_hl_0_b" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/halo_white" />
+</ViewFlipper>
+<TextView android:id="@+id/wk_num_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:textSize="15sp" android:textColor="@color/w_text1" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" android:layout_gravity="center" />
+<TextView android:id="@+id/wk_nw_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:textSize="15sp" android:textColor="@color/w_accent" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" android:layout_gravity="center" android:visibility="gone" />
+<TextView android:id="@+id/wk_nt_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:textSize="15sp" android:textColor="@color/w_text1" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" android:layout_gravity="center" android:visibility="gone" />
+</FrameLayout>
+</LinearLayout>
+<LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center_horizontal">
+<TextView android:id="@+id/wk_name_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MON" android:textSize="10sp" android:textColor="@color/w_text2" android:fontFamily="monospace" android:includeFontPadding="false" android:singleLine="true" android:textAllCaps="true" android:letterSpacing="0.05" />
+<FrameLayout android:layout_width="34dp" android:layout_height="34dp" android:layout_marginTop="5dp">
+<ViewFlipper android:id="@+id/wk_hl_1" android:layout_width="match_parent" android:layout_height="match_parent" android:autoStart="true" android:flipInterval="1800" android:inAnimation="@anim/pulse_in" android:outAnimation="@anim/pulse_out" android:visibility="gone">
+<ImageView android:id="@+id/wk_hl_1_a" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/circle_white" />
+<ImageView android:id="@+id/wk_hl_1_b" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/halo_white" />
+</ViewFlipper>
+<TextView android:id="@+id/wk_num_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:textSize="15sp" android:textColor="@color/w_text1" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" android:layout_gravity="center" />
+<TextView android:id="@+id/wk_nw_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:textSize="15sp" android:textColor="@color/w_accent" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" android:layout_gravity="center" android:visibility="gone" />
+<TextView android:id="@+id/wk_nt_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:textSize="15sp" android:textColor="@color/w_text1" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" android:layout_gravity="center" android:visibility="gone" />
+</FrameLayout>
+</LinearLayout>
+<LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center_horizontal">
+<TextView android:id="@+id/wk_name_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MON" android:textSize="10sp" android:textColor="@color/w_text2" android:fontFamily="monospace" android:includeFontPadding="false" android:singleLine="true" android:textAllCaps="true" android:letterSpacing="0.05" />
+<FrameLayout android:layout_width="34dp" android:layout_height="34dp" android:layout_marginTop="5dp">
+<ViewFlipper android:id="@+id/wk_hl_2" android:layout_width="match_parent" android:layout_height="match_parent" android:autoStart="true" android:flipInterval="1800" android:inAnimation="@anim/pulse_in" android:outAnimation="@anim/pulse_out" android:visibility="gone">
+<ImageView android:id="@+id/wk_hl_2_a" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/circle_white" />
+<ImageView android:id="@+id/wk_hl_2_b" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/halo_white" />
+</ViewFlipper>
+<TextView android:id="@+id/wk_num_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:textSize="15sp" android:textColor="@color/w_text1" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" android:layout_gravity="center" />
+<TextView android:id="@+id/wk_nw_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:textSize="15sp" android:textColor="@color/w_accent" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" android:layout_gravity="center" android:visibility="gone" />
+<TextView android:id="@+id/wk_nt_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:textSize="15sp" android:textColor="@color/w_text1" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" android:layout_gravity="center" android:visibility="gone" />
+</FrameLayout>
+</LinearLayout>
+<LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center_horizontal">
+<TextView android:id="@+id/wk_name_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MON" android:textSize="10sp" android:textColor="@color/w_text2" android:fontFamily="monospace" android:includeFontPadding="false" android:singleLine="true" android:textAllCaps="true" android:letterSpacing="0.05" />
+<FrameLayout android:layout_width="34dp" android:layout_height="34dp" android:layout_marginTop="5dp">
+<ViewFlipper android:id="@+id/wk_hl_3" android:layout_width="match_parent" android:layout_height="match_parent" android:autoStart="true" android:flipInterval="1800" android:inAnimation="@anim/pulse_in" android:outAnimation="@anim/pulse_out" android:visibility="gone">
+<ImageView android:id="@+id/wk_hl_3_a" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/circle_white" />
+<ImageView android:id="@+id/wk_hl_3_b" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/halo_white" />
+</ViewFlipper>
+<TextView android:id="@+id/wk_num_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:textSize="15sp" android:textColor="@color/w_text1" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" android:layout_gravity="center" />
+<TextView android:id="@+id/wk_nw_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:textSize="15sp" android:textColor="@color/w_accent" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" android:layout_gravity="center" android:visibility="gone" />
+<TextView android:id="@+id/wk_nt_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:textSize="15sp" android:textColor="@color/w_text1" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" android:layout_gravity="center" android:visibility="gone" />
+</FrameLayout>
+</LinearLayout>
+<LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center_horizontal">
+<TextView android:id="@+id/wk_name_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MON" android:textSize="10sp" android:textColor="@color/w_text2" android:fontFamily="monospace" android:includeFontPadding="false" android:singleLine="true" android:textAllCaps="true" android:letterSpacing="0.05" />
+<FrameLayout android:layout_width="34dp" android:layout_height="34dp" android:layout_marginTop="5dp">
+<ViewFlipper android:id="@+id/wk_hl_4" android:layout_width="match_parent" android:layout_height="match_parent" android:autoStart="true" android:flipInterval="1800" android:inAnimation="@anim/pulse_in" android:outAnimation="@anim/pulse_out" android:visibility="gone">
+<ImageView android:id="@+id/wk_hl_4_a" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/circle_white" />
+<ImageView android:id="@+id/wk_hl_4_b" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/halo_white" />
+</ViewFlipper>
+<TextView android:id="@+id/wk_num_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:textSize="15sp" android:textColor="@color/w_text1" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" android:layout_gravity="center" />
+<TextView android:id="@+id/wk_nw_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:textSize="15sp" android:textColor="@color/w_accent" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" android:layout_gravity="center" android:visibility="gone" />
+<TextView android:id="@+id/wk_nt_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:textSize="15sp" android:textColor="@color/w_text1" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" android:layout_gravity="center" android:visibility="gone" />
+</FrameLayout>
+</LinearLayout>
+<LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center_horizontal">
+<TextView android:id="@+id/wk_name_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MON" android:textSize="10sp" android:textColor="@color/w_text2" android:fontFamily="monospace" android:includeFontPadding="false" android:singleLine="true" android:textAllCaps="true" android:letterSpacing="0.05" />
+<FrameLayout android:layout_width="34dp" android:layout_height="34dp" android:layout_marginTop="5dp">
+<ViewFlipper android:id="@+id/wk_hl_5" android:layout_width="match_parent" android:layout_height="match_parent" android:autoStart="true" android:flipInterval="1800" android:inAnimation="@anim/pulse_in" android:outAnimation="@anim/pulse_out" android:visibility="gone">
+<ImageView android:id="@+id/wk_hl_5_a" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/circle_white" />
+<ImageView android:id="@+id/wk_hl_5_b" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/halo_white" />
+</ViewFlipper>
+<TextView android:id="@+id/wk_num_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:textSize="15sp" android:textColor="@color/w_text1" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" android:layout_gravity="center" />
+<TextView android:id="@+id/wk_nw_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:textSize="15sp" android:textColor="@color/w_accent" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" android:layout_gravity="center" android:visibility="gone" />
+<TextView android:id="@+id/wk_nt_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:textSize="15sp" android:textColor="@color/w_text1" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" android:layout_gravity="center" android:visibility="gone" />
+</FrameLayout>
+</LinearLayout>
+<LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center_horizontal">
+<TextView android:id="@+id/wk_name_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MON" android:textSize="10sp" android:textColor="@color/w_text2" android:fontFamily="monospace" android:includeFontPadding="false" android:singleLine="true" android:textAllCaps="true" android:letterSpacing="0.05" />
+<FrameLayout android:layout_width="34dp" android:layout_height="34dp" android:layout_marginTop="5dp">
+<ViewFlipper android:id="@+id/wk_hl_6" android:layout_width="match_parent" android:layout_height="match_parent" android:autoStart="true" android:flipInterval="1800" android:inAnimation="@anim/pulse_in" android:outAnimation="@anim/pulse_out" android:visibility="gone">
+<ImageView android:id="@+id/wk_hl_6_a" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/circle_white" />
+<ImageView android:id="@+id/wk_hl_6_b" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/halo_white" />
+</ViewFlipper>
+<TextView android:id="@+id/wk_num_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:textSize="15sp" android:textColor="@color/w_text1" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" android:layout_gravity="center" />
+<TextView android:id="@+id/wk_nw_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:textSize="15sp" android:textColor="@color/w_accent" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" android:layout_gravity="center" android:visibility="gone" />
+<TextView android:id="@+id/wk_nt_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:textSize="15sp" android:textColor="@color/w_text1" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" android:layout_gravity="center" android:visibility="gone" />
+</FrameLayout>
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>
+</FrameLayout>

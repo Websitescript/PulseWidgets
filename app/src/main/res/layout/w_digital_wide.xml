@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView android:id="@+id/bg_base" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/bg_sys_auto_ga" />
+<ViewFlipper android:id="@+id/bg_flip" android:layout_width="match_parent" android:layout_height="match_parent" android:autoStart="true" android:flipInterval="6500" android:inAnimation="@anim/fade_in_slow" android:outAnimation="@anim/fade_out_slow">
+    <ImageView android:id="@+id/bg_alt" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/bg_sys_auto_gb" />
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" />
+</ViewFlipper>
+<ImageView android:id="@+id/bg_glass" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/glass_overlay" android:visibility="gone" />
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center_vertical|start" android:paddingLeft="20dp" android:paddingRight="12dp">
+<TextClock android:id="@+id/tp_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format12Hour="h:mm" android:format24Hour="HH:mm" android:textSize="40sp" android:textColor="@color/w_text1" android:fontFamily="sans-serif-light" android:includeFontPadding="false" android:singleLine="true" />
+<TextClock android:id="@+id/ts_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format12Hour="EEEE, d MMMM" android:format24Hour="EEEE, d MMMM" android:textSize="13sp" android:textColor="@color/w_text2" android:fontFamily="sans-serif-medium" android:includeFontPadding="false" android:singleLine="true" android:layout_marginTop="2dp" />
+</LinearLayout>
+</FrameLayout>

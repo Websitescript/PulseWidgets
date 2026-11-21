@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pulse Widgets</string>
+    <string name="desc_analog">Analog clock face. Adds day, date and weather as you make it bigger.</string>
+    <string name="desc_digital">Digital clock. Adds date, seconds and weather as you make it bigger.</string>
+    <string name="desc_all">All-in-one: time, date, weather, week strip and analog clock at larger sizes.</string>
+    <string name="desc_calendar">Date tile, card, week strip or full month grid depending on size.</string>
+</resources>
